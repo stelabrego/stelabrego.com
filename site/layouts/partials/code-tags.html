@@ -1,0 +1,9 @@
+{{ with .Params.tags }}
+<div class='code-tag-container'>
+    {{ range . }}
+    <div class='code-tag'>
+        {{ . }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}

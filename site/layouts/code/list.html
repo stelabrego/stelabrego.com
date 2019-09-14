@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+<h2>{{ .Title }}</h2>
+
+<p>{{ .Content }}</p>
+{{ range .Pages }}
+{{ partial "code-project.html" . }}
+{{ end }}
+<h3>My Latest Github Activity</h3>
+<div id="feed"></div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src='{{ "github-activity.js" | absURL }}'></script>
+<script>
+    GitHubActivity.feed({
+        username: "stelabrego",
+        // repository: "your-repo", // optional
+        selector: "#feed",
+        limit: 5 // optional
+    });
+</script>
+
+{{ partial "footer.html" . }}

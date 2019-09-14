@@ -1,0 +1,28 @@
+{{ partial "head.html" . }}
+<section>
+  <div class='columns is-vcentered'>
+    <div class='column is-5'>
+      <div id="typed-strings">
+        <p></p>
+        <p>programming tutor.</p>
+        <p>freelancer.</p>
+        <p>software developer.</p>
+      </div>
+      <span id='typed'></p>
+    </div>
+    <div class='column is-5 is-offset-1'>
+      <img src='{{ "img/selfie.jpg" | absURL }}'>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const typed = new Typed('#typed', {
+      typeSpeed: 40,
+      smartBackspace: true,
+      stringsElement: '#typed-strings'
+    });
+  });
+</script>
+{{ partial "footer.html" . }}

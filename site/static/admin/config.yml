@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: master
+site_url: https://stelabr.com
+media_folder: "site/static/img"
+public_folder: "img"
+collections:
+  - name: "home"
+    label: "Home"
+    folder: "site/content/"
+    create: false
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: Body, name: "body", widget: "markdown", required: false}
+  - name: "art"
+    label: "Art"
+    folder: "site/content/art"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: true}
+      - {label: "Image", name: "imgFilename", widget: "image", required: true}
+      - {label: "Sound", name: "soundFilename", widget: "file", required: false, allow_multiple: false}
+      - {label: Body, name: "body", widget: "markdown", required: false}
+  - name: "code"
+    label: "Code"
+    folder: "site/content/code"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: true}
+      - {label: "Repo", name: "repo", widget: "string", required: true}
+      - {label: "Demo", name: "demo", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: Body, name: "body", widget: "markdown", required: false}
+  - name: "organizing"
+    label: "Organizing"
+    folder: "site/content/organizing"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: Body, name: "body", widget: "markdown", required: true}
+  - name: "tutoring"
+    label: "Tutoring"
+    folder: "site/content/tutoring"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: Body, name: "body", widget: "markdown", required: true}
+  # - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Blog" # Used in the UI
+  #   folder: "_posts/blog" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Featured Image", name: "thumbnail", widget: "image"}
+  #     - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+  #     - {label: "Body", name: "body", widget: "markdown"}

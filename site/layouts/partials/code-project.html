@@ -1,0 +1,12 @@
+<article class='code-list-item'>
+    <!-- this <div> includes the title summary -->
+    <div>
+        <h3>{{ .Title }}</h3>
+        {{ partial "code-tags.html" . }}
+        <p>{{ .Summary }}</p>
+    </div>
+    <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+    <div class='read-more'>
+        <a href="{{ .Permalink }}">See More…</a>
+    </div>
+</article>
