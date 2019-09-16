@@ -1,3 +1,4 @@
 baseURL = "https://stelabrego.com"
 languageCode = "en-us"
 summaryLength = 40
+pygmentsStyle = "dracula"
