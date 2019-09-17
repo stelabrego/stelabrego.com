@@ -1,7 +1,6 @@
 {{ partial "head.html" . }}
 <h2>{{ .Title }}</h2>
-
-<p>{{ .Content }}</p>
+{{ .Content }}
 {{ range .Pages }}
 {{ partial "code-project.html" . }}
 {{ end }}
@@ -9,7 +8,7 @@
 <div id="feed"></div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript" src='{{ "github-activity.js" | absURL }}'></script>
+<script type="text/javascript" src='/github-activity.js'></script>
 <script>
     GitHubActivity.feed({
         username: "stelabrego",

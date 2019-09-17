@@ -2,17 +2,17 @@
 <h2>{{ .Title }}</h2>
 {{ partial "code-tags.html" . }}
 {{ with .Params.repo }}
-<p>🛠 <a href='https://github.com/stelabrego/{{ . }}'>Check out the source code</a> 👷🏻‍♀️</p>
+<p>🛠 <a href='https://github.com/stelabrego/{{ . }}' target="_blank">Check out the source code</a> 👷🏻‍♀️</p>
 {{ end }}
 {{ with .Params.demo }}
-<p>✨ <a href='{{ . }}'>Check out the live demo</a> ✨</p>
+<p>✨ <a href='{{ . }}' target="_blank">Check out the live demo</a> ✨</p>
 {{ end }}
-<p>{{ .Content }}</p>
+{{ .Content }}
 {{ with .Params.repo }}
 <h3>Latest Github Activity in This Repo</h3>
 <div id="feed"></div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript" src='{{ "github-activity.js" | absURL }}'></script>
+<script type="text/javascript" src='/github-activity.js'></script>
 <script>
     GitHubActivity.feed({
         username: "stelabrego",

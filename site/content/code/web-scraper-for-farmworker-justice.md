@@ -1,11 +1,11 @@
 ---
 title: Web Scraper for the Boycott Wendy's Campaign
 date: 2019-02-28T22:53:12.436Z
-repo: wsf-scrape
+repo: boycott-wendys-web-scraper
 tags:
   - python
   - selenium
-slug: web-scraper
+slug: boycott-wendys-web-scraper
 ---
 Washtenaw Solidarity with Farmworkers, a grassroots [activist collective](https://www.facebook.com/washsolidaritywfarmworkers/) in Ann Arbor, advocates for American farmworkers in their struggle for human rights. In 2018 their focus was set on the fast food giant Wendy's presence on the University of Michigan's campus because of the corporation's refusal to join the [Fair Food Program](https://www.fairfoodprogram.org). WSF promoted the [ongoing boycott](https://www.boycott-wendys.org) of the restaurant and fought to convince the university to boycott Wendy's on-campus location by nixing their soon-to-be-expiring contract. They needed crucial support from the university's student groups, but since there are [thousands of them](https://maizepages.umich.edu/organizations), they were forced to endlessly copy and paste email addresses until their wrists ached.
 
