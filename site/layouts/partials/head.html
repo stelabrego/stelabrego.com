@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ .Title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href='{{ "reset.css" | absURL }}'>
-  <link rel="stylesheet" type="text/css" media="screen" href='{{ "main.css" | absURL }}'>
+  <link rel="stylesheet" type="text/css" media="screen" href='/reset.css'>
+  <link rel="stylesheet" type="text/css" media="screen" href='/main.css'>
   <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,700&display=swap" rel="stylesheet">  {{ if eq .Section "code" }}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-  <link rel="stylesheet" href='{{ "github-activity.css" | absURL }}'>
+  <link rel="stylesheet" href='/github-activity.css'>
   {{ end }}
 </head>
 
@@ -20,13 +20,13 @@
     <div id='navBar'>
       <ul>
         <li>
-          <a href='{{ "code" | absURL }}'>Coding Projects</a>
+          <a href='/code'>Coding Projects</a>
         </li>
         <li>
-          <a href='{{ "tutoring" | absURL }}'>Tutoring Services</a>
+          <a href='/tutoring'>Tutoring Services</a>
         </li>
         <li>
-          <a href='{{ "activism" | absURL }}'>Activism</a>
+          <a href='/activism'>Activism</a>
         </li>
       </ul>
     </div>
