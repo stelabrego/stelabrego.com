@@ -289,11 +289,7 @@ nav ul a {
 }
 
 .code-list-item {
-    margin: 2rem 0 2rem 0;
-}
-
-.code-list-item .read-more {
-    margin-top: .5rem;
+    margin: 2.5rem 0;
 }
 
 .code-list-item h3 {
@@ -304,7 +300,7 @@ nav ul a {
 }
 
 .code-tag-container {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
 }
 
 .code-tag {
