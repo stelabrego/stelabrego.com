@@ -1,15 +1,17 @@
 ---
-title: Queer Meditations for the End of the World Website
+title: Meditation Website Concept
 date: 2019-03-02T19:17:16.588Z
-repo: qmew
-demo: 'https://qmew.stelabr.com'
+repo: meditation-website-concept
+demo: 'https://meditation-website-concept.stelabrego.com'
 tags:
-  - hugo
-  - markdown
+  - go
   - javascript
+  - markdown
   - html
   - css
-  - netlify-cms
+  - netlify cms backend
+slug: meditation-website-concept
+draft: true
 ---
 In late 2018, my friend Katy made a Facebook post about how she was looking for guided meditations made by queer people, but she couldn't find any. She asked her queer friends to record guided meditations for her. She asked me to make a website to host the submitted mediations, and I was so excited to take on the project.
 
