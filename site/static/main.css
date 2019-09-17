@@ -383,3 +383,7 @@ p > code {
   padding: 0rem .3rem;
   border-radius: 3px;
 }
+
+.youtube-container {
+  margin: 2rem 0;
+}
