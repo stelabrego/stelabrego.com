@@ -11,10 +11,9 @@
 {{ with .Params.repo }}
 <h3>Latest Github Activity in This Repo</h3>
 <div id="feed"></div>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript" src='/github-activity.js'></script>
+<script src='/github-activity.js'></script>
 <script>
-    GitHubActivity.feed({
+    GitHubActivity.default.feed({
         username: "stelabrego",
         repository: "{{ . }}", // optional
         selector: "#feed",
