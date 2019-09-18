@@ -314,16 +314,12 @@ nav ul a {
     
 }
 
-.gha-activity.gha-small a {
-  font-size: 0.9rem;
+.gha-message a, .gha-message {
+  font-size: 1rem !important
 }
 
-.gha-feed a {
-  font-size: 1rem;
-}
-
-img.gha-gravatar-commit {
-  display: none;
+.gha-feed {
+  border-radius: 20px;
 }
 
 @media (max-width: 500px) {
