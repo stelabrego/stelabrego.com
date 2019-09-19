@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 <section>
-  <div class='columns is-vcentered is-centered'>
-    <div class='column is-7 hero-typed-container'>
+  <div class='columns is-vcentered is-mobile'>
+    <div class='column is-7-tablet is-5-mobile hero-typed-container'>
       <div id="typed-strings" style="visibility: hidden;">
         <p></p>
         <p>programming tutor.</p>
@@ -10,11 +10,51 @@
       </div>
       <span id='typed'></p>
     </div>
-    <div class='column is-4'>
-      <img src='/img/selfie.jpg'>
+    <div class='column is-4-tablet is-7-mobile'>
+      <img class='hero-selfie' src='/img/selfie.jpg'>
     </div>
   </div>
 </section>
+<section class='skills'>
+  <div class='columns is-multiline is-centered is-vcentered is-mobile'>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/js.svg'>
+    </div>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/css.svg'>
+    </div>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/html.svg'>
+    </div>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/node.svg'>
+    </div>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/python.svg'>
+    </div>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/java.svg'>
+    </div>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/docker.svg'>
+    </div>
+    <div class='column is-4-mobile'>
+      <img class='skill' src='/img/linux.svg'>
+    </div>
+  </div>
+</section>
+<div id="feed"></div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src='/github-activity.js'></script>
+<script>
+  GitHubActivity.default.feed({
+    username: "stelabrego",
+    // repository: "your-repo", // optional
+    selector: "#feed",
+    limit: 3 // optional
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script>
   window.addEventListener('DOMContentLoaded', (event) => {

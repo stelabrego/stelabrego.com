@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
-<h2>{{ .Title }}</h2>
+<h1>{{ .Title }}</h1>
+<hr class='fancy slideInUp'>
 {{ .Content }}
 {{ range .Pages }}
 {{ partial "code-project.html" . }}
