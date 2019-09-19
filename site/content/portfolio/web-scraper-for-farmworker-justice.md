@@ -13,7 +13,7 @@ When I joined Washtenaw Solidarity with Farmworkers, they had just started draft
 
 ## Code Snippets
 
-Let's focus on the University of Michigan script. First, we will import everything needed and setup a csv DictWriter to output my results to a file. Don't forgot to install selenium and get_souped using the package manager of your choice.
+Let's focus on the University of Michigan script. First, we will import everything needed and setup a csv DictWriter to output my results to a file. Don't forgot to install `selenium` and `get_souped` using the package manager of your choice.
 {{< highlight python >}}
 from selenium import webdriver
 import time
