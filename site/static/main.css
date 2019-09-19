@@ -382,6 +382,7 @@ hr.fancy {
 }
 
 a.button {
+  margin: 1rem 0;
   padding: 1rem 2rem;
   font-size: 2rem;
   background-color: rgb(248, 248, 248);
@@ -390,4 +391,8 @@ a.button {
   display: inline-block;
   font-weight: 500;
   box-shadow: 0px 0px 9px 0px rgb(207, 207, 207);
+}
+
+section.hire-me {
+  text-align: center;
 }
