@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: var(--primary-font-color);
 }
 
@@ -78,7 +78,7 @@ hr {
 }
 
 .site-wrapper p {
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 nav {
@@ -271,8 +271,9 @@ nav ul a:hover {
 }
 
 p > code {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(248, 247, 247);
   padding: 0rem .3rem;
+  font-size: 1.5rem;
   border-radius: 3px;
 }
 
@@ -378,4 +379,15 @@ hr.fancy {
   background: hsl(256, 100%, 93%);
   height: 3px;
   border-radius: 30%;
+}
+
+a.button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: rgb(248, 248, 248);
+  border-radius: 10px;
+  color: var(--primary-font-color);
+  display: inline-block;
+  font-weight: 500;
+  box-shadow: 0px 0px 9px 0px rgb(207, 207, 207);
 }
