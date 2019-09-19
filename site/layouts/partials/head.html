@@ -4,30 +4,52 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ .Title }}</title>
+  <title>Stel Abrego {{with .Title}} - {{ . }}{{end}}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href='/reset.css'>
+  <link rel="stylesheet" href="/bulma-columns.css">
   <link rel="stylesheet" href='/github-activity.css'>
   <link rel="stylesheet" type="text/css" media="screen" href='/main.css'>
-  <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,700&display=swap" rel="stylesheet">  {{ if eq .Section "code" }}
+  <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,700&display=swap" rel="stylesheet">
+  {{ if eq .Section "code" }}
   {{ end }}
 </head>
 
 <body>
-  <nav>
-    <a id='navName' href='/'>Stel Abrego</a>
-    <div id='navBar'>
-      <ul>
-        <li>
-          <a href='/code'>Coding Projects</a>
-        </li>
-        <li>
-          <a href='/tutoring'>Tutoring Services</a>
-        </li>
-        <li>
-          <a href='/activism'>Activism</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <nav>
+      <a id='navName' href='/'>Stel Abrego</a>
+      <div id='navBar' class='navBar-closed'>
+        <ul class='nav-ul-closed'>
+          <li>
+            <a href='/portfolio'>Portfolio</a>
+          </li>
+          <li>
+            <a href='/tutoring'>Tutoring</a>
+          </li>
+          <li>
+            <a href='/activism'>Activism</a>
+          </li>
+          <li>
+            <a href='mailto:stelabrego@icloud.com'>Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const menuToggle = document.getElementById('menuToggle');
+      const navBar = document.getElementById('navBar')
+      const navUl = document.querySelector('nav ul')
+      menuToggle.onclick = (event) => {
+      console.log('menu toggle clicked')
+      navBar.classList.toggle('navBar-opened')
+      navBar.classList.toggle('navBar-closed')
+      navUl.classList.toggle('nav-ul-opened')
+      navUl.classList.toggle('nav-ul-closed')
+    }
+    })
+  </script>
+  <img id='menuToggle' src='/img/menu.svg'>
   <div class="site-wrapper">
