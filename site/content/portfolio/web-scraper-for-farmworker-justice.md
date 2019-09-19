@@ -11,7 +11,7 @@ Washtenaw Solidarity with Farmworkers, a grassroots [activist collective](https:
 
 When I joined Washtenaw Solidarity with Farmworkers, they had just started drafting their [petition](https://docs.google.com/forms/d/e/1FAIpQLSfdaenm6AwR6zV9haAVpCUXVaZD3AmsI-bCuii6IfBSkibY9w/viewform). To help with their efforts, I created `python` scripts to collect contact information for all of the student organizations at the University of Michigan, Eastern Michigan University, and Washtenaw Community College.
 
-### Code Snippets
+## Code Snippets
 
 Let's focus on the University of Michigan script. First, we will import everything needed and setup a csv DictWriter to output my results to a file. Don't forgot to install selenium and get_souped using the package manager of your choice.
 {{< highlight python >}}

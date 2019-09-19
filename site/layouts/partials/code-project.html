@@ -1,9 +1,9 @@
 <article class='code-list-item'>
     <!-- this <div> includes the title summary -->
     <div>
-        <h3>{{ .Title }}</h3>
+        <h1 class='preview'>{{ .Title }}</h1>
         {{ partial "code-tags.html" . }}
-        <p>{{ .Summary }}</p>
+        <p class='portfolio-summary'>{{ .Summary }}</p>
     </div>
     <!-- This <div> includes a read more link, but only if the summary is truncated... -->
     <div class='read-more'>
