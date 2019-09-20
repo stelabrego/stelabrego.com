@@ -25,6 +25,9 @@
             <a href='/portfolio'>Portfolio</a>
           </li>
           <li>
+            <a href='/resume'>Résumé</a>
+          </li>
+          <li>
             <a href='/tutoring'>Tutoring</a>
           </li>
           <li>
@@ -43,12 +46,12 @@
       const navBar = document.getElementById('navBar')
       const navUl = document.querySelector('nav ul')
       menuToggle.onclick = (event) => {
-      console.log('menu toggle clicked')
-      navBar.classList.toggle('navBar-opened')
-      navBar.classList.toggle('navBar-closed')
-      navUl.classList.toggle('nav-ul-opened')
-      navUl.classList.toggle('nav-ul-closed')
-    }
+        console.log('menu toggle clicked')
+        navBar.classList.toggle('navBar-opened')
+        navBar.classList.toggle('navBar-closed')
+        navUl.classList.toggle('nav-ul-opened')
+        navUl.classList.toggle('nav-ul-closed')
+      }
     })
   </script>
   <img id='menuToggle' src='/img/menu.svg'>

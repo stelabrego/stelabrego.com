@@ -1,6 +1,5 @@
 {{ partial "head.html" . }}
 <h1>{{ .Title }}</h1>
-<hr class='fancy slideInUp'>
 {{ partial "code-tags.html" . }}
 {{ with .Params.repo }}
 <p>🛠 <a href='https://github.com/stelabrego/{{ . }}' target="_blank">Check out the source code</a> 👷🏻‍♀️</p>
@@ -8,18 +7,21 @@
 {{ with .Params.demo }}
 <p>✨ <a href='{{ . }}' target="_blank">Check out the live demo</a> ✨</p>
 {{ end }}
-{{ .Content }}
-{{ with .Params.repo }}
+<hr class='fancy'>
+<div class='slideInUp'>
+  {{ .Content }}
+  {{ with .Params.repo }}
+</div>
 <h3>Latest Github Activity in This Repo</h3>
 <div id="feed"></div>
 <script src='/github-activity.js'></script>
 <script>
-    GitHubActivity.default.feed({
-        username: "stelabrego",
-        repository: "{{ . }}", // optional
-        selector: "#feed",
-        limit: 3 // optional
-    });
+  GitHubActivity.default.feed({
+    username: "stelabrego",
+    repository: "{{ . }}", // optional
+    selector: "#feed",
+    limit: 3 // optional
+  });
 </script>
 {{ end }}
 {{ partial "footer.html" . }}
