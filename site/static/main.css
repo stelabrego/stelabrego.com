@@ -35,7 +35,7 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
-  margin-top: 1.8rem;
+  margin: 1.8rem 0;
 }
 
 p, ul, a {
@@ -183,12 +183,14 @@ nav ul a:hover {
 
 
 #social a {
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 1rem;
 }
 
-#social img {
-    width: 100%;
+#social svg {
+    width: 2.3rem;
+    height: 2.3rem;
+    color: black;
     border-radius: 0;
     box-shadow: none;
 }
@@ -229,13 +231,10 @@ nav ul a:hover {
 
 @media (max-width: 700px) {
     #social {
-        top: unset !important;
-        bottom: 0 !important;
         position: static;
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
-        height: 2rem;
     }
     #social a {
         width: 2rem;
@@ -284,6 +283,8 @@ p > code {
 
 #menuToggle {
   display: none;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (max-width: 500px) {
@@ -299,7 +300,6 @@ p > code {
     position: absolute;
     top: 20px;
     right: 30px;
-    width: 2rem;
   }
   header {
     margin: 0rem 0 2rem 0;
@@ -335,11 +335,14 @@ section.skills {
   margin: 3rem 0;
 }
 
-img.skill {
+svg.skill {
   box-shadow: none;
   height: 4rem;
+  width: 4rem;
   border-radius: 0;
   max-width: 100%;
+  margin: 0 auto;
+  display: block;
 }
 
 .hero-selfie {
