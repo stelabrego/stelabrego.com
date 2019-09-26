@@ -15,7 +15,7 @@ tags:
 
 ![website](/img/my-delicate-sun-1.jpg)
 
-Inspired by online literary journals like [Butter Press](https://www.bttrprss.com), I created my own literary journal website called *[My Delicate Sun](https://literary-magazine-concept.stelabrego.com/)*. The fictional journal's mission is to publish works of LGBTQIA+ artists. It's built with `go` templating and Hugo, the static site generator. It features custom SVG's, fancy CSS backgrounds, and a fully integrated [forestry.io](https://forestry.io) content management system which makes adding and updating content incredibly easy for a non-technical editor.
+Inspired by online literary magazines like [Butter Press](https://www.bttrprss.com), I created my own literary magazine website called *[My Delicate Sun](https://literary-magazine-concept.stelabrego.com/)*. The fictional magazine's mission is to publish works of LGBTQIA+ artists. It's built with `go` templating and Hugo, the static site generator. It features custom SVG's, fancy CSS backgrounds, and a fully integrated [forestry.io](https://forestry.io) content management system which makes adding and updating content incredibly easy for a non-technical editor.
 
 ## Website Structure
 
