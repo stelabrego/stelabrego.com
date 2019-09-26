@@ -401,6 +401,10 @@ section.hire-me {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+
+.content ul {
+  list-style-type: circle;
+}
 .content li {
   list-style-position: inside;
   padding-left: 1rem;
