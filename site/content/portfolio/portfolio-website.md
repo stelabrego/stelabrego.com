@@ -9,6 +9,9 @@ tags:
   - css
   - html
 ---
+
+<img class='mobile-phone' src='https://media.giphy.com/media/TiO9awohTkrWgza9Gy/giphy.gif'>
+
 **You are here!** This site is built with [Hugo](https://gohugo.io), a static site generator written in `go`. No themes are loaded which means all the structure and design is my own. I constructed the view/layout templates with `go`'s amazing [templating language](https://golang.org/pkg/text/template/). The CSS features modern design without relying on a framework by leveraging `flexbox`, gradients, animations, and more. All of the content is kept in `markdown` which makes editing easy.
 
 Here's an example of some `markdown` this page is built with:

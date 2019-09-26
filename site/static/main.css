@@ -72,7 +72,7 @@ hr {
 .site-wrapper img {
     border-radius: 20px;
     box-shadow: 3px 3px 9px 0px grey;
-    margin: 3rem auto 2rem;
+    margin: 0 auto;
     display: block;
 }
 
@@ -406,6 +406,14 @@ section.hire-me {
   padding-left: 1rem;
 }
 
+.content img {
+  margin: 3rem auto;
+}
+
 .highlight pre::-webkit-scrollbar {
   display: none;
+}
+
+img.mobile-phone {
+  border-radius: 50px;
 }
