@@ -4,15 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Stel Abrego {{with .Title}} - {{ . }}{{end}}</title>
+  <title>{{with .Title}}{{ . }} | {{end}}Stel Abrego </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href='/reset.css'>
+  <link rel="icon" href="/favicon.png">
   <link rel="stylesheet" href="/bulma-columns.css">
   <link rel="stylesheet" href='/github-activity.css'>
   <link rel="stylesheet" type="text/css" media="screen" href='/main.css'>
   <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,700&display=swap" rel="stylesheet">
-  {{ if eq .Section "code" }}
-  {{ end }}
 </head>
 
 <body>
