@@ -141,7 +141,7 @@ nav ul a:hover {
 }
 
 .site-wrapper {
-    width: 700px;
+    width: 900px;
     max-width: 80%;
     margin: 2rem auto;
 }
@@ -328,6 +328,11 @@ p > code {
     opacity: 0;
     transition: opacity .1s ease;
   }
+  .site-wrapper {
+    margin: .5rem;
+    max-width: 100%;
+    width: 96%;
+  }
 }
 
 section.skills {
@@ -420,4 +425,10 @@ section.hire-me {
 
 img.mobile-phone {
   border-radius: 40px;
+}
+
+#resume {
+  width: 100%;
+  border-radius: 5px;
+  height: 1100px;
 }
