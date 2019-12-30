@@ -396,6 +396,7 @@ svg.skill {
   max-width: 250px;
   margin: 0 auto;
   display: block;
+  box-shadow: none !important;
 }
 
 #feed {

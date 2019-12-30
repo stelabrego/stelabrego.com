@@ -10,7 +10,7 @@ tags:
   - ajax
   - graph.js
   - linux
-draft: true
+draft: false
 ---
 During the fall semester of 2018, I took a class at Washtenaw Community College called _Web Programming Using Apache, MySQL, and PHP_. For the final project, we were given the skeleton for a MVC web app designed to track the user's freelancing jobs.
 
