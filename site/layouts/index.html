@@ -53,8 +53,22 @@
 </section>
 <section class='hire-me'>
   <a href='/portfolio' class='button hire-me-button hvr-ripple-out'>Check out my coding projects!</a>
-  </div>
 </section>
+<section>
+	<h3>Latest Github Activity</h3>
+	<div id="feed"></div>
+</section>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src='/github-activity.js'></script>
+<script>
+  GitHubActivity.default.feed({
+    username: "stelcodes",
+    // repository: "your-repo", // optional
+    selector: "#feed",
+    limit: 5 // optional
+  });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script>
   window.addEventListener('DOMContentLoaded', (event) => {
