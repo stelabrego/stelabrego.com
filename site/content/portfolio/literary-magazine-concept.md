@@ -2,7 +2,7 @@
 title: Literary Magazine Concept Website
 date: 2019-09-15T18:32:20.407Z
 repo: literary-magazine-concept
-demo: https://literary-magazine-concept.stelabrego.com/
+demo: https://literary-magazine-concept.stel.codes/
 tags:
   - go
   - javascript
@@ -15,7 +15,7 @@ tags:
 
 ![website](/img/my-delicate-sun-1.jpg)
 
-Inspired by online literary magazines like [Butter Press](https://www.bttrprss.com), I created my own literary magazine website called *[My Delicate Sun](https://literary-magazine-concept.stelabrego.com/)*. The fictional magazine's mission is to publish works of LGBTQIA+ artists. It's built with `go` templating and Hugo, the static site generator. It features custom SVG's, fancy CSS backgrounds, and a fully integrated [forestry.io](https://forestry.io) content management system which makes adding and updating content incredibly easy for a non-technical editor.
+Inspired by online literary magazines like [Butter Press](https://www.bttrprss.com), I created my own literary magazine website called *[My Delicate Sun](https://literary-magazine-concept.stel.codes/)*. The fictional magazine's mission is to publish works of LGBTQIA+ artists. It's built with `go` templating and Hugo, the static site generator. It features custom SVG's, fancy CSS backgrounds, and a fully integrated [forestry.io](https://forestry.io) content management system which makes adding and updating content incredibly easy for a non-technical editor.
 
 ## Website Structure
 

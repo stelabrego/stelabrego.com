@@ -2,7 +2,7 @@
 title: Meditation Website Concept
 date: 2019-03-02T19:17:16.588Z
 repo: meditation-website-concept
-demo: 'https://meditation-website-concept.stelabrego.com'
+demo: 'https://meditation-website-concept.stel.codes'
 tags:
   - go
   - javascript

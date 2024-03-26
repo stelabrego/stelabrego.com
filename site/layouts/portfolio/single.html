@@ -2,7 +2,7 @@
 <h1>{{ .Title }}</h1>
 {{ partial "code-tags.html" . }}
 {{ with .Params.repo }}
-<p>🛠 <a href='https://github.com/stelabrego/{{ . }}' target="_blank">Check out the source code</a> 👷🏻‍♀️</p>
+<p>🛠 <a href='https://github.com/stelcodes/{{ . }}' target="_blank">Check out the source code</a> 👷🏻‍♀️</p>
 {{ end }}
 {{ with .Params.demo }}
 <p>✨ <a href='{{ . }}' target="_blank">Check out the live demo</a> ✨</p>
@@ -17,7 +17,7 @@
 <script src='/github-activity.js'></script>
 <script>
   GitHubActivity.default.feed({
-    username: "stelabrego",
+    username: "stelcodes",
     repository: "{{ . }}", // optional
     selector: "#feed",
     limit: 3 // optional

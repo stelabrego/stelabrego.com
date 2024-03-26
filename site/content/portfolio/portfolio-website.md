@@ -20,7 +20,7 @@ Here's an example of some `markdown` this page is built with:
 title: Portfolio Website
 date: 2019-02-27T18:32:20.407Z
 repo: portfolio
-demo: 'https://stelabrego.com'
+demo: 'https://stel@stel.codes'
 tags:
   - go
   - javascript
@@ -38,7 +38,7 @@ This is a section of the view template that created this page:
 {{ partial "code-tags.html" . }}
 
 {{ with .Params.repo }}
-<p>🛠 <a href='https://github.com/stelabrego/{{ . }}' target="_blank">Check out the source code</a> 👷🏻‍♀️</p>
+<p>🛠 <a href='https://github.com/stelcodes/{{ . }}' target="_blank">Check out the source code</a> 👷🏻‍♀️</p>
 {{ end }}
 
 {{ with .Params.demo }}
